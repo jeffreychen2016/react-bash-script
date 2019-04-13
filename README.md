@@ -13,5 +13,18 @@ bash rcc.sh Test -c
 
 **Boilerplate flag:** there are 2 different flags available ```-f and -c```. if ```-f``` is used, the boilerplate for js file will be functional based. if ```-c``` is used, the boilerplate for js file will be class based.
 
+### Run The Script Globally:
+if you want to run the script globally, then do the following:
+1. Grant the file executable permission
+```chmod +x rcc.sh```
+2. rename the file from rcc.sh -> rcc
+3. Copy the file to either ```/usr/bin``` or ```/usr/local/bin```
+```sudo cp rcc /usr/bin/rcc```
+or
+```sudo cp rcc /usr/local/bin/rcc```
+Note that, script in  /usr/local/bin is available for all users while /usr/bin is only available for yourself.
+
+After running above code, you should be able to execute the script as ```rcc Test -f```
+
 ### Troubleshoot:
 when running the script, if receive error: ```$'\r': command not found```, try to run the script with: ```dos2unix rcc.sh``` first. This will covert the file to Unix format. Then run the script again as normal. 
