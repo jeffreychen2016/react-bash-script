@@ -24,7 +24,7 @@ sudo cp rcc /usr/bin/rcc
 # or
 sudo cp rcc /usr/local/bin/rcc
 ```
-4. Change the ownership from root to your user account:
+4. Change the ownership from root to your user account, otherwise you will not be able to save/delete/edit the files that script creates: <br>
 ```sudo chown youruser:youruser -R rcc```
 
 Note that, script in  /usr/local/bin is available for all users while /usr/bin is only available for yourself.
