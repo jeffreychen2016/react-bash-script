@@ -18,10 +18,10 @@ if you want to run the script globally, then do the following:
 1. Grant the file executable permission
 ```chmod +x rcc.sh```
 2. rename the file from rcc.sh -> rcc
-3. Copy the file to either ```/usr/bin``` or ```/usr/local/bin```
-```sudo cp rcc /usr/bin/rcc```
-or
-```sudo cp rcc /usr/local/bin/rcc```
+3. Copy the file to either ```/usr/bin``` or ```/usr/local/bin``` <br>
+```sudo cp rcc /usr/bin/rcc```  <br>
+```# or``` <br>
+```sudo cp rcc /usr/local/bin/rcc```  <br>
 Note that, script in  /usr/local/bin is available for all users while /usr/bin is only available for yourself.
 
 After running above code, you should be able to execute the script as ```rcc Test -f```
